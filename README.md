@@ -170,5 +170,34 @@ git pull
 Clone ggsashimi repository from guigolab.
 
 ```
-git clone ggsashimi  guigolab
+git clone ggsashimi guigolab
+```
+
+
+# EXERCISE 1
+Make a new branch called fix and move to it.
+```
+git branch fix
+git checkout fix
+```
+Fix the seqClass.py script so that it is able to classify correctly any RNA or DNA sequence.
+
+```
+git add seqClass.py
+git commit -m "We add some changes on the script"
+git checkout master
+```
+Merge the fix branch back to master.
+```
+git merge fix
+git add seqClass.py
+git commit -m "We merge the branches"
+```
+Push your commits on master to your GitHub repository.
+
+```
+git pull
+git push
+git checkout fix
+git push -u origin fix
 ```
